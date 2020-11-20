@@ -13,4 +13,13 @@ spec:
     name: my-nginx
     weight: 100
   wildcardPolicy: None
+status:
+  ingress:
+  - conditions:
+    - lastTransitionTime: null
+      status: "True"
+      type: Admitted
+    host: business-app.apps.lab.example.com
+    routerName: router
+    wildcardPolicy: None
 
