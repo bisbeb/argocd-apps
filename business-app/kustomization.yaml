@@ -4,4 +4,5 @@ resources:
 - ./deployment.yaml
 images:
 - name: nginx
-  newTag: 1.19.4
+  newName: twalter/openshift-nginx
+  newTag: stable
