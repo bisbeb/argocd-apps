@@ -1,2 +1,2 @@
 resources:
-- ./business-critical-microservice.yaml
+- ./business-app.yaml
