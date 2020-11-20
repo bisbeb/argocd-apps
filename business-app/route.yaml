@@ -16,7 +16,7 @@ spec:
 status:
   ingress:
   - conditions:
-      status: 'True'
+    - status: 'True'
       type: Admitted
     host: business-app.apps.lab.example.com
     routerName: router
