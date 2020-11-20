@@ -16,9 +16,6 @@ spec:
 status:
   ingress:
   - conditions:
-    - lastTransitionTime: null
-      status: "True"
-      type: Admitted
     host: business-app.apps.lab.example.com
     routerName: router
     wildcardPolicy: None
