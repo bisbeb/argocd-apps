@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: business-critical-microservice
+  namespace: argocd
+spec:
+  project: business-app
+  source:
+    repoURL: https://github.com/bisbeb/argocd-apps.git
+    targetRevision: HEAD
+    path: business-critical-microservice
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: business-app
