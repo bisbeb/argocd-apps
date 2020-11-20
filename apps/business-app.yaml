@@ -12,6 +12,11 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: business-app
+  ignoreDifferences:
+  - group: apps
+    kind: Route
+    jsonPointers:
+    - /status/ingress/conditions
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
