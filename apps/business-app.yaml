@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/bisbeb/argocd-apps.git
     targetRevision: HEAD
-    path: business-critical-microservice
+    path: business-app
   destination:
     server: https://kubernetes.default.svc
     namespace: business-app
